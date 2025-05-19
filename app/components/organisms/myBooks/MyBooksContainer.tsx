@@ -6,9 +6,10 @@ import { collection, getDocs, query, where, orderBy } from "firebase/firestore";
 import { auth, db } from "@/app/config/firebaseConfig";
 import SectionTitle from "../../atoms/MyBooks/SectionTitle";
 import MyBookList from "../../molecules/MyBooks/MyBookList";
+import { BookAndUser } from "@/app/types/interface/interfaces";
 
 export default function MyBooksContainer() {
-    const [books, setBooks] = useState<any[]>([]);
+    const [books, setBooks] = useState<BookAndUser[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -21,7 +22,9 @@ export default function MyBooksContainer() {
                 );
 
                 const snapshot = await getDocs(q);
-                const docs = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+                const docs = snapshot.docs.map((doc) => ({
+                    id: doc.id, ...doc.data()
+                })) as BookAndUser[];
                 setBooks(docs);
             }
 

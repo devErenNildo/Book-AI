@@ -113,3 +113,17 @@ export interface PropsInputUpload {
     type: string;
     accept: string;
 }
+
+export interface ThemeContextType {
+    theme: "light" | "dark";
+    toggleTheme: () => void;
+    isMounted: boolean;
+}
+
+export interface BookAndUser extends PropsCardBook {
+    pdfURL: string;
+    createdAt: any;
+    userId: string;
+    userName: string;
+    userPhoto: string;
+}
