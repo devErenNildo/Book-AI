@@ -4,7 +4,7 @@ import { PropsCardText } from "@/app/types/interface/interfaces";
 
 export default function ForYouCards() {
     return (
-        <section className="flex space-x-4">
+        <section className="flex space-x-4 w-full justify-center gap-x-10 pb-8">
             {
                 data.map((card: PropsCardText) => (
 

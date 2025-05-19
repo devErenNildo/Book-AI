@@ -30,7 +30,7 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --background: #000000;
-    --foreground: #ededed;
+    --foreground: #292929;
     --text: #fff
   }
 }

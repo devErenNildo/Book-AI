@@ -1,5 +1,6 @@
 "use client"
 import Button from "../../atoms/button/Button";
+import BtnLogin from "../../atoms/buttonLogin/ButtonLogin";
 import ThemeToggle from "../../atoms/themetoggle/ThemeToggle";
 import NavLink from "../navlinks/NavLinks";
 
@@ -9,7 +10,7 @@ export default function NavMenu() {
             <NavLink href="/">Início</NavLink>
             <NavLink href="/sobre">Sobre</NavLink>
             <NavLink href="/contato">Contato</NavLink>
-            <Button label="Log in" onClick={() => alert("teste")} color="red" />
+            <BtnLogin />
             <ThemeToggle />
         </nav>
     );

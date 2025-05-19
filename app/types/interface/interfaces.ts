@@ -31,15 +31,15 @@ export interface PropsImage {
 }
 
 export interface PropsCardAvatar {
-  images: {
-    name: {
-      first: string;
-      last: string;
-    };
-    picture: {
-      thumbnail: string;
-    };
-  }[];
+    images: {
+        name: {
+            first: string;
+            last: string;
+        };
+        picture: {
+            thumbnail: string;
+        };
+    }[];
 }
 
 export interface AvatarApiResponse {
@@ -61,4 +61,55 @@ export interface AvatarApiResponse {
         page: number;
         version: string;
     };
+}
+
+export interface GoogleUser {
+    name: string;
+    email: string;
+    picture: string;
+}
+
+export interface PropsAvatarLogged {
+    img: string;
+    name: string;
+    onClick: () => void;
+}
+
+export interface PropsAssideLinks {
+    href: string;
+    Icon: React.ElementType;
+    placeholder: string;
+}
+
+export interface PropsBookInfo {
+    author: string;
+    title: string;
+    description: string;
+}
+
+export interface PropsBookTag {
+    tags: string;
+}
+
+export interface PropsBookTags {
+    tags: string[];
+}
+
+export interface PropsLikes {
+    likes: number;
+}
+
+export interface PropsCardBook {
+    id: string
+    title: string;
+    author: string;
+    description: string;
+    coverURL: string;
+    likes: number;
+    tags?: string[];
+}
+
+export interface PropsInputUpload {
+    type: string;
+    accept: string;
 }

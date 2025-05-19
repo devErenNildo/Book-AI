@@ -8,7 +8,7 @@ export default function CardInfo({ title, text}: PropsCardText) {
     return (
         <div
             className="
-                group p-6 max-w-sm bg-[#111] text-white rounded-xl border border-zinc-700
+                group p-6 max-w-sm bg-foreground text-text rounded-xl border border-zinc-700
                 hover:border-purple-500 hover:shadow-[0_0_15px_2px_rgba(168,85,247,0.4)]
                 transition-all duration-300 relative
             "

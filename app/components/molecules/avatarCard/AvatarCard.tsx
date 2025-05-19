@@ -1,4 +1,4 @@
-import AvatarImage from "../../atoms/avatarImage/AvatarImage";
+import AvatarImage from "../../atoms/user/AvatarImage";
 import { PropsCardAvatar } from "@/app/types/interface/interfaces";
 
 export default function AvatarCard({ images }: PropsCardAvatar) {

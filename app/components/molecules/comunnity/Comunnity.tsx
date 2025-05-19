@@ -4,7 +4,7 @@ import Button from "../../atoms/button/Button";
 
 export default function Comunnity() {
     return (
-        <>
+        <div className="flex flex-col items-center">
             <HeadingTwo
                 highlight="+ 15 mil usuários "
                 text=" ativos no Book AI"
@@ -15,6 +15,6 @@ export default function Comunnity() {
             <div className="flex items-center gap-4">
                 <Button label="teste"></Button>
             </div>
-        </>
+        </div>
     );
 }

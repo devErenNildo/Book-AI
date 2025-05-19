@@ -5,7 +5,7 @@ import HeroBanner from "../../atoms/heroBanner/HeroBanner";
 
 export default function HeroSection() {
   return (
-    <section className="bg-background text-white px-8 py-20 flex flex-col md:flex-row items-center justify-between gap-10">
+    <section className="w-full bg-background text-white px-8 py-20 flex flex-col md:flex-row items-center justify-between gap-10">
       <HeroTextBlock />
       <HeroBanner />
     </section>
