@@ -16,12 +16,13 @@ import { db, auth } from "@/app/config/firebaseConfig";
 import { onAuthStateChanged } from "firebase/auth";
 import { useAuth } from "@/app/context/AuthContext";
 import PdfChatLayout from "@/app/components/organisms/chat/PdfChatLayout";
+import { InterfaceMessage, LoggedUser } from "@/app/types/interface/interfaces";
 
 export default function PdfChatPage() {
   const { id } = useParams(); // pdfId
-  const [messages, setMessages] = useState<any[]>([]);
+  const [messages, setMessages] = useState<InterfaceMessage[]>([]);
   const [newMessage, setNewMessage] = useState("");
-  const [userLogged, setUserLogged] = useState<any>(null);
+  const [userLogged, setUserLogged] = useState<LoggedUser | null>(null);
   const [pdfUrl, setPdfUrl] = useState<string | null>(null);
   const router = useRouter();
   const { user } = useAuth();

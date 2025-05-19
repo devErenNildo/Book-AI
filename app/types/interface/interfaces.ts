@@ -122,8 +122,23 @@ export interface ThemeContextType {
 
 export interface BookAndUser extends PropsCardBook {
     pdfURL: string;
-    createdAt: any;
+    createdAt: Date;
     userId: string;
     userName: string;
     userPhoto: string;
+}
+
+export interface InterfaceMessage {
+    id: string;
+    message: string;
+    senderName: string;
+    senderPhoto: string;
+    senderId: string;
+    createdAt: Date;
+}
+
+export interface LoggedUser {
+    uid: string;
+    displayName: string | null;
+    photoURL: string | null;
 }

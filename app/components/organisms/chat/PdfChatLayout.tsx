@@ -1,9 +1,10 @@
 import PdfViewer from "./PdfViewer";
 import ChatBox from "./ChatBox";
+import { InterfaceMessage } from "@/app/types/interface/interfaces";
 
 interface PdfChatLayoutProps {
     pdfUrl: string | null;
-    messages: any[];
+    messages: InterfaceMessage[];
     newMessage: string;
     setNewMessage: (val: string) => void;
     sendMessage: () => void;
