@@ -19,7 +19,6 @@ export default function ThemeToggle() {
         {theme === "dark" ? <PiMoonFill className="text-white text-sm" /> : <PiSunBold className="text-white text-sm" />}
       </div>
 
-      {/* Ícones de fundo (sem destaque) */}
       <div className="absolute top-1 left-1 w-7 h-7 flex items-center justify-center text-gray-400 pointer-events-none">
         <PiSunBold className="text-sm" />
       </div>

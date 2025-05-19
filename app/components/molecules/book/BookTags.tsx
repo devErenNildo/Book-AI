@@ -6,7 +6,7 @@ export default function BookTags({ tags }: PropsBookTags) {
         tags.length > 0 && (
             <div className="flex flex-wrap gap-2 mt-3">
                 {tags.map((tag, index) => (
-                    <Tags tags={tag} key={index} />
+                    <Tags tags={tag} tag={true} key={index} />
                 ))}
             </div>
         )

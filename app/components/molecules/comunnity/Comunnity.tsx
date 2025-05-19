@@ -1,4 +1,4 @@
-import HeadingTwo from "../../atoms/headingTwo/HeadingTwo";
+import HeadingTwo from "../../atoms/heading/HeadingTwo";
 import Paragraph from "../../atoms/paragraph/Paragraph";
 import Button from "../../atoms/button/Button";
 

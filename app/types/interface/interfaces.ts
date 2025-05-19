@@ -1,8 +1,24 @@
+import { StaticImageData } from "next/image";
 import React from "react";
 
 export interface PropsNavLink {
     href: string;
     children: React.ReactNode;
+}
+
+export interface PropsChildren {
+    children: React.ReactNode;
+    color?: string;
+}
+
+export interface PropsAboutSection extends PropsChildren {
+    paragraph: string;
+    listItem?: string[];
+}
+
+export interface PropsOrganismAbout extends PropsAboutSection {
+    image: StaticImageData;
+    imageLeft: boolean;
 }
 
 export interface PropsButton {
@@ -89,6 +105,7 @@ export interface PropsBookInfo {
 
 export interface PropsBookTag {
     tags: string;
+    tag: boolean;
 }
 
 export interface PropsBookTags {

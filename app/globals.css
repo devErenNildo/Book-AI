@@ -25,6 +25,7 @@
   --color-foreground: var(--foreground);
   --color-text: var(--text);
   --color-pink: var(--pink);
+  --color-blue: var(--blue)
 }
 
 @media (prefers-color-scheme: dark) {

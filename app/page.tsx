@@ -17,8 +17,7 @@ export default function Home() {
     }
   }, [user, router]);
   return (
-    <div className="bg-background w-full justify-center">
-      <Header />
+    <div className="bg-background w-full justify-center pt-16">
       < HeroSection />
       <ForYouCards />
       <ComunnitySection />
