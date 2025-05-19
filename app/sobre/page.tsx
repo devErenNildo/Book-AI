@@ -18,7 +18,7 @@ export default function Sobre() {
                 listItem={["Comentários em tempo real", "Foto e nome de quem comenta", "Atualizações automáticas"]}
                 image={img1}
                 imageLeft={true}
-            >"Leitura com interação"</HeroAbout>
+            >{"Leitura com interação"}</HeroAbout>
 
             <HeroAbout
                 color="blue"
@@ -27,14 +27,14 @@ export default function Sobre() {
                 listItem={["Upload de PDF e imagem de capa", "Campos personalizados", "Likes, tags e organização por autor"]}
                 image={img2}
                 imageLeft={false}
-            >"Publicação com qualidade"</HeroAbout>
+            >{"Publicação com qualidade"}</HeroAbout>
 
             {/* Tecnologias */}
             <HeroTechnology
                 color="pink"
                 paragraph="O projeto foi desenvolvido utilizando ferramentas modernas:"
                 listItem={["Next.js", "TypeScript", "Tailwind CSS, Firebase", "Atomic Design"]}
-            >"Tecnologias Utilizadas"</HeroTechnology>
+            >{"Tecnologias Utilizadas"}</HeroTechnology>
 
             {/* Créditos */}
             <footer className="text-sm text-white/40 text-center mt-12">
