@@ -16,11 +16,10 @@ export default function HeroAbout({ children, color, paragraph, listItem, image,
             }
 
             <HeroTextListAbout
-                children={children}
                 color={color}
                 paragraph={paragraph}
                 listItem={listItem}
-            />
+            >{children}</HeroTextListAbout>
 
             { !imageLeft &&
                 <Image
