@@ -1,5 +1,3 @@
-// components/BookCard.tsx
-import { FaHeart } from "react-icons/fa";
 import BookInfos from "../../atoms/book/BookInfos";
 import BookTags from "./BookTags";
 import Like from "../../atoms/book/Like";

@@ -68,7 +68,7 @@ export default function UploadForm() {
         <div className="bg-foreground w-full max-w-2xl rounded-xl shadow-lg p-6 space-y-4 border border-purple-800">
             <h2 className="text-2xl font-bold text-purple-400">Enviar novo livro</h2>
 
-            <CoverUpload onFileChange={(file, preview) => setCoverFile(file)} />
+            <CoverUpload onFileChange={(file) => setCoverFile(file)} />
             <PdfUploadInput onFileChange={(file) => setPdfFile(file)} />
 
             <div>

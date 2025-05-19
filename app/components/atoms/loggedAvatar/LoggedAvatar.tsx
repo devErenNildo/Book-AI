@@ -5,11 +5,9 @@ import { useState } from "react";
 interface Props {
     img: string;
     name: string;
-    email: string;
-    onLogout: () => void;
 }
 
-export default function LoggedAvatar({ img, name, email, onLogout }: Props) {
+export default function LoggedAvatar({ img, name}: Props) {
     const [open, setOpen] = useState(false);
 
     return (

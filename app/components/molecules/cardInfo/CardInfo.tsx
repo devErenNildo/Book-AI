@@ -1,5 +1,5 @@
 'use client'
-import IconArrow from "../../atoms/iconArrow/IconArrow";
+
 import CardArrow from "../cardArrow/CardArrow";
 import CardText from "../cardText/CardText";
 import { PropsCardText } from "@/app/types/interface/interfaces";

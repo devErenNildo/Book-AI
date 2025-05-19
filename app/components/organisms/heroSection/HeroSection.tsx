@@ -1,6 +1,4 @@
 import HeroTextBlock from "../../molecules/heroTextBlock/HeroTextBlock";
-import Image from "next/image";
-import banner from "@/public/banner1.png";
 import HeroBanner from "../../atoms/heroBanner/HeroBanner";
 
 export default function HeroSection() {
