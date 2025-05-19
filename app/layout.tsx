@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "./context/ThemeContext";
-import { GoogleOAuthProvider } from "@react-oauth/google";
 import Providers from "./provider";
 import Sidebar from "./components/organisms/asside/Asside";
 

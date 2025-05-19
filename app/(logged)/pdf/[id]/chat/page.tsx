@@ -56,7 +56,7 @@ export default function PdfChatPage() {
     const unsub = onSnapshot(q, (snapshot) => {
       const msgs = snapshot.docs.map((doc) => ({
         id: doc.id,
-        ...(doc.data() as any),
+        ...(doc.data() as Omit<InterfaceMessage, "id">),
       }));
       setMessages(msgs);
     });
