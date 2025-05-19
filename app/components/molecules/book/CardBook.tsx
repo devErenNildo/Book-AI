@@ -4,7 +4,6 @@ import BookTags from "./BookTags";
 import Like from "../../atoms/book/Like";
 
 export default function CardBook({
-    id,
     title,
     author,
     description,
