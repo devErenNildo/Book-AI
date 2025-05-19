@@ -27,5 +27,4 @@ export function useTheme(): ThemeContextType {
         throw new Error("O tema precisa tar em um contexto");
     }
     return context;
-    // return useContext(ThemeContext);
 }
