@@ -2,14 +2,21 @@ import { useState, useEffect } from "react";
 import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import { db } from "@/app/config/firebaseConfig";
 import BookCard from "../../molecules/book/BookCard";
-export default function ListBooks() {
-    const [books, setBooks] = useState<any[]>([]);
+import { PropsCardBook } from "@/app/types/interface/interfaces";
 
+export default function ListBooks() {
+
+    const [books, setBooks] = useState<PropsCardBook[]>([]);
+    
     useEffect(() => {
         const fetchBooks = async () => {
             const q = query(collection(db, "pdfs"), orderBy("createdAt", "desc"));
             const snapshot = await getDocs(q);
-            const docs = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+            const docs = snapshot.docs.map((doc) => ({
+                id: doc.id,
+                ...doc.data(),
+            })) as PropsCardBook[];
+
             setBooks(docs);
         };
         fetchBooks();
