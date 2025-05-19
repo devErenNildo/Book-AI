@@ -1,8 +1,9 @@
 "use client"
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 import { useThemeToggle } from "../hooks/useThemeToggle";
+import { ThemeContextType } from "../types/interface/interfaces";
 
-const ThemeContext = createContext<any>(null);
+const ThemeContext = createContext<ThemeContextType | null>(null);
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
     const [isMounted, setIsMounted] = useState(false);
@@ -20,6 +21,11 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     );
 }
 
-export function useTheme() {
-    return useContext(ThemeContext);
+export function useTheme(): ThemeContextType {
+    const context = useContext(ThemeContext);
+    if (!context) {
+        throw new Error("O tema precisa tar em um contexto");
+    }
+    return context;
+    // return useContext(ThemeContext);
 }
