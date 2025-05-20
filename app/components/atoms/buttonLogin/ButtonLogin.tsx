@@ -4,7 +4,7 @@ import { useAuth } from "@/app/context/AuthContext";
 import Button from "../button/Button";
 
 export default function ButtonLogin() {
-    const { user, login, logout } = useAuth();
+    const { user, login } = useAuth();
 
     return (
         <div className="py-4">

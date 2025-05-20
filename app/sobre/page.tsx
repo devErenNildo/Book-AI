@@ -1,4 +1,3 @@
-import Link from "next/link";
 import HeroTextHeading from "../components/molecules/heroTextBlock/HeroTextHeading";
 import HeroAbout from "../components/organisms/heroSection/HeroAbout";
 import img1 from "@/public/leitura.png";

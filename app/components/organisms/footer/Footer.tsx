@@ -1,4 +1,3 @@
-import Heading from '../../atoms/heading/Heading';
 import ParagraphMin from '../../atoms/paragraph/ParagraphMin';
 import LogoText from '../../atoms/logoText/LogoText';
 

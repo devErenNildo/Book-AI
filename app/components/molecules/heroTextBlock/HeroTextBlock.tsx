@@ -1,6 +1,5 @@
 import Heading from "../../atoms/heading/Heading";
 import Paragraph from "../../atoms/paragraph/Paragraph";
-import Button from "../../atoms/button/Button";
 import ButtonLogin from "../../atoms/buttonLogin/ButtonLogin";
 
 export default function HeroTextBlock() {
