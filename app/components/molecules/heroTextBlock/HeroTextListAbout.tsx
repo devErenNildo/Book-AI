@@ -5,7 +5,7 @@ import ListItem from "../../atoms/list/ListItem";
 
 export default function HeroTextListAbout({ children, color, paragraph, listItem }: PropsAboutSection) {
     return (
-        <div className="space-y-4">
+        <div className="space-y-4  text-center md:text-start">
             <SubHeading color={color}>
                 {children}
             </SubHeading>

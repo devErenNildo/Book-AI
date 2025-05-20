@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react";
-import BtnLogin from "../../atoms/buttonLogin/ButtonLogin";
+import ButtonLogin from "../../atoms/buttonLogin/ButtonLogin";
 import ThemeToggle from "../../atoms/themetoggle/ThemeToggle";
 import NavLink from "../navlinks/NavLinks";
 import { IoMenu, IoClose } from "react-icons/io5";
@@ -30,7 +30,7 @@ export default function NavMenu() {
                 <NavLink href="/">Início</NavLink>
                 <NavLink href="/sobre">Sobre</NavLink>
                 <NavLink href="/contato">Contato</NavLink>
-                <BtnLogin />
+                <ButtonLogin />
                 <ThemeToggle />
             </nav>
         </>

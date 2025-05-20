@@ -4,6 +4,7 @@ import "./globals.css";
 import Providers from "./provider";
 import Sidebar from "./components/organisms/asside/Asside";
 import Header from "./components/organisms/header/Header";
+import Footer from "./components/organisms/footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +34,10 @@ export default function RootLayout({
         <Providers>
           <Header />
           <Sidebar />
-            {children}
+          <div className="flex flex-col flex-1 min-h-screen justify-between w-full">
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
         </Providers>
       </body>
     </html>

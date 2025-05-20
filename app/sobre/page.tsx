@@ -35,11 +35,6 @@ export default function Sobre() {
                 paragraph="O projeto foi desenvolvido utilizando ferramentas modernas:"
                 listItem={["Next.js", "TypeScript", "Tailwind CSS, Firebase", "Atomic Design"]}
             >{"Tecnologias Utilizadas"}</HeroTechnology>
-
-            {/* Créditos */}
-            <footer className="text-sm text-white/40 text-center mt-12">
-                Desenvolvido por <Link href="https://github.com/seuusuario" className="underline">Seu Nome</Link> • 2024
-            </footer>
         </main>
 
     );

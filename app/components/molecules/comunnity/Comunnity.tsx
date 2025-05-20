@@ -1,6 +1,6 @@
 import HeadingTwo from "../../atoms/heading/HeadingTwo";
 import Paragraph from "../../atoms/paragraph/Paragraph";
-import Button from "../../atoms/button/Button";
+import ButtonLogin from "../../atoms/buttonLogin/ButtonLogin";
 
 export default function Comunnity() {
     return (
@@ -13,7 +13,7 @@ export default function Comunnity() {
                 Nossos usuários adoram usar o Book AI para resumir seus livros e interagir com pessoas que tem o mesmo gosto delas. Nós os insentivamos a compartilhasr suas ideias e desenvolver um entendimento sobre um conteudo que demoraria para chegaer sozinho
             </Paragraph>
             <div className="flex items-center gap-4">
-                <Button label="teste"></Button>
+                <ButtonLogin />
             </div>
         </div>
     );
