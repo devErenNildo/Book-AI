@@ -11,10 +11,6 @@ const customJestConfig = {
 
     // Permite usar caminhos absolutos com @, como import x from '@/components/X'
     '^@/(.*)$': '<rootDir>/$1',
-
-    // Simula a importação de imagens e fontes para evitar erros nos testes
-    // Ao importar logo.png, Jest usa um mock ('test-file-stub')
-    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/.jest/mocks/fileMock.js',
   },
 
   // Define o ambiente de teste como o DOM do navegador (emulado via jsdom)
