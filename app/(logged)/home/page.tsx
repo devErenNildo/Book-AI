@@ -19,7 +19,7 @@ export default function Home() {
   }, [user, router]);
 
   if (checking) {
-    return <p>Verificando acesso...</p>; // Tela de carregamento antes de exibir o conteúdo
+    return <p>Verificando acesso...</p>;
   }
   return (
     <main className="ml-72">

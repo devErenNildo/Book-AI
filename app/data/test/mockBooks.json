@@ -1,0 +1,24 @@
+[
+    {
+        "id": "1",
+        "title": "Livro 1",
+        "author": "Autor A",
+        "description": "Descrição do Livro 1",
+        "coverURL": "/img1.png",
+        "likes": 10,
+        "tags": [
+            "aventura"
+        ]
+    },
+    {
+        "id": "2",
+        "title": "Livro 2",
+        "author": "Autor B",
+        "description": "Descrição do Livro 2",
+        "coverURL": "/img2.png",
+        "likes": 20,
+        "tags": [
+            "ficção"
+        ]
+    }
+]
