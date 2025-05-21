@@ -95,6 +95,7 @@ export interface PropsAssideLinks {
     href: string;
     Icon: React.ElementType;
     placeholder: string;
+    className?: string;
 }
 
 export interface PropsBookInfo {
@@ -158,4 +159,27 @@ export interface LoggedUser {
     uid: string;
     displayName: string | null;
     photoURL: string | null;
+}
+
+export interface LabelProps {
+    children: React.ReactNode;
+    htmlFor: string;
+}
+
+export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> { }
+
+export interface TextAreaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {}
+
+export interface ErrorProps {
+  message?: string;
+}
+
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  loading?: boolean;
+}
+
+export interface MockNextLinkProps {
+    href: string;
+    className?: string;
+    children: React.ReactNode;
 }
