@@ -1,5 +1,5 @@
 import { FaHome, FaUpload, FaBook } from "react-icons/fa"
-import AssideLinks from "../../atoms/assideLink/AssideLink";
+import AssideLinks from "../../atoms/asside/AssideLink";
 
 export default function AssideMenu() {
     return (

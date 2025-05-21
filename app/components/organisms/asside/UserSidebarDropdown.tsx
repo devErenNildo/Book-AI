@@ -8,7 +8,7 @@ import {
     FaSignOutAlt,
 } from "react-icons/fa";
 import AvatarImage from "../../atoms/user/AvatarImage";
-import LoggedAvatarItem from "../../atoms/atomsAsside/LoggedAvatarItem";
+import LoggedAvatarItem from "../../atoms/asside/LoggedAvatarItem";
 import UserInfos from "../../molecules/moleculesAsside/UserInfos";
 
 
