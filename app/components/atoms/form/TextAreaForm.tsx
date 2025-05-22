@@ -1,5 +1,5 @@
 
-export default function TextArea(props: React.InputHTMLAttributes<HTMLTextAreaElement>) {
+export default function TextArea(props: React.TextareaHTMLAttributes<HTMLTextAreaElement>) {
   return (
     <textarea
       {...props}
