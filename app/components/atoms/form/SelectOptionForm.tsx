@@ -1,8 +1,6 @@
 import { SelectHTMLAttributes } from 'react';
 
-interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {}
-
-export default function SelectOptionForm(props: SelectProps) {
+export default function SelectOptionForm(props: SelectHTMLAttributes<HTMLSelectElement>) {
   return (
     <select
       {...props}

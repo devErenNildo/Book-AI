@@ -5,11 +5,13 @@ import { MockNextLinkProps } from "@/app/types/interface/interfaces";
 
 
 jest.mock("next/link", () => {
-    return ({ href, className, children }: MockNextLinkProps) => (
+    const MockLink = ({ href, className, children }: MockNextLinkProps) => (
         <a href={href} className={className} data-testid="mock-link">
             {children}
         </a>
     );
+    MockLink.displayName = "MockNextLink";
+    return MockLink;
 });
 
 const MockIcon = ({ color }: { color: string }) => (
