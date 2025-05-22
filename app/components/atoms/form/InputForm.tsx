@@ -1,8 +1,5 @@
-import { InputProps } from "@/app/types/interface/interfaces";
 
-
-
-export default function InputForm(props: InputProps) {
+export default function InputForm(props: React.InputHTMLAttributes<HTMLInputElement>) {
   return (
     <input
       {...props}

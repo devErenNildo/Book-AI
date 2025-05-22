@@ -1,6 +1,5 @@
-import { TextAreaProps } from "@/app/types/interface/interfaces";
 
-export default function TextArea(props: TextAreaProps) {
+export default function TextArea(props: React.InputHTMLAttributes<HTMLTextAreaElement>) {
   return (
     <textarea
       {...props}

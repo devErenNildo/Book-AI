@@ -166,10 +166,6 @@ export interface LabelProps {
     htmlFor: string;
 }
 
-export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> { }
-
-export interface TextAreaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {}
-
 export interface ErrorProps {
   message?: string;
 }
