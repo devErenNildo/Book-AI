@@ -2,6 +2,7 @@ import BookInfos from "../../atoms/book/BookInfos";
 import BookTags from "./BookTags";
 import Like from "../../atoms/book/Like";
 import Link from "next/link";
+import { CardMedia } from "@mui/material";
 
 interface BookCardProps {
     id: string
@@ -26,11 +27,23 @@ export default function BookCard({
         <Link href={`/pdf/${id}/chat`} className="w-full max-w-3xl p-[2px] rounded-xl bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 shadow-md">
             <div className="flex gap-4 p-4 rounded-[10px] bg-foreground text-text">
                 {/* Capa */}
-                <img
+                <CardMedia
+                    component="img"
+                    sx={{
+                        width: 100,
+                        height: '100%',
+                        objectFit: 'cover',
+                        borderRadius: '8px 0 0 8px',
+                        background: '#222',
+                    }}
+                    image={coverURL}
+                    alt={title}
+                />
+                {/* <img
                     src={coverURL}
                     alt={title}
                     className="w-24 h-36 object-cover rounded-md border border-text"
-                />
+                /> */}
 
                 {/* Info */}
                 <div className="flex-1">

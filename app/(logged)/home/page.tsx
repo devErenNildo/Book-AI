@@ -1,11 +1,12 @@
 "use client"
 
 import React, { useEffect, useState } from "react";
+import ListBooks from '@/app/components/organisms/BooksMain/ListBooks';
 import { useRouter } from 'next/navigation';
 import { useAuth } from "@/app/context/AuthContext";
-import ListBooks from "@/app/components/organisms/BooksMain/ListBooks";
+import Loading from "@/app/components/atoms/loading/Loading";
 
-export default function Home() {
+export default function MediaControlCard() {
   const router = useRouter();
   const { user } = useAuth();
   const [checking, setChecking] = useState(true);
@@ -14,16 +15,15 @@ export default function Home() {
     if (!user) {
       router.push('/');
     } else {
-      setChecking(false)
+      setTimeout(() => setChecking(false), 2000);
     }
   }, [user, router]);
 
   if (checking) {
-    return <p>Verificando acesso...</p>;
+    return <Loading />
   }
+
   return (
-    <main className="ml-72">
-      <ListBooks />
-    </main>
+    <ListBooks />
   );
 }
