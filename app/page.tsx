@@ -16,10 +16,12 @@ export default function Home() {
     }
   }, [user, router]);
   return (
-    <div className="bg-background w-full justify-center pt-16">
-      < HeroSection />
-      <ForYouCards />
+    <div className="bg-background min-h-screen w-full pt-16">
+      <div className="container mx-auto">
+        <HeroSection />
+        <ForYouCards />
+      </div>
       <ComunnitySection />
-    </div >
+    </div>
   );
 }
