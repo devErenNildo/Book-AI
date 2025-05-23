@@ -1,0 +1,18 @@
+{
+  "HomePage": {
+    "title": "¡Hola mundo!"
+  },
+  "ContactPage": {
+    "nameLabel": "Nombre",
+    "emailLabel": "Correo electrónico",
+    "subjectLabel": "Asunto",
+    "messageLabel": "Mensaje",
+    "buttonText": "Enviar",
+    "subjectOptions": {
+      "select": "Seleccione un asunto",
+      "duvida": "Pregunta",
+      "sugestao": "Sugerencia",
+      "outro": "Otro"
+    }
+  }
+}

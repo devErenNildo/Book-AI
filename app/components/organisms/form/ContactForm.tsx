@@ -10,7 +10,23 @@ import SelectField from '../../molecules/form/SelectFieldForm';
 import ImageBanner from '../../atoms/heroBanner/ImageBanner';
 import image from "@/public/ajuda.png";
 
-export default function ContactForm() {
+interface ContactFormProps {
+    nameLabel: string;
+    emailLabel: string;
+    subjectLabel: string;
+    messageLabel: string;
+    buttonText: string;
+    subjectOptions: { value: string; label: string }[];
+}
+
+export default function ContactForm({
+    nameLabel,
+    emailLabel,
+    subjectLabel,
+    messageLabel,
+    buttonText,
+    subjectOptions,
+}: ContactFormProps) {
     const {
         register,
         handleSubmit,
@@ -34,40 +50,35 @@ export default function ContactForm() {
             >
                 <InputFieldForm
                     id="name"
-                    label="Nome"
+                    label={nameLabel}
                     error={errors.name?.message}
                     registration={register('name')}
                 />
 
                 <InputFieldForm
                     id="email"
-                    label="Email"
+                    label={emailLabel}
                     error={errors.email?.message}
                     registration={register('email')}
                 />
 
                 <SelectField
                     id="subject"
-                    label="Assunto"
-                    options={[
-                        { value: '', label: 'Selecione um assunto' },
-                        { value: 'duvida', label: 'Dúvida' },
-                        { value: 'sugestao', label: 'Sugestão' },
-                        { value: 'outro', label: 'Outro' },
-                    ]}
+                    label={subjectLabel}
+                    options={subjectOptions}
                     error={errors.subject?.message}
                     registration={register('subject')}
                 />
 
                 <TextAreaFieldForm
                     id="message"
-                    label="Mensagem"
+                    label={messageLabel}
                     error={errors.message?.message}
                     registration={register('message')}
                 />
 
                 <ButtonForm type="submit" loading={isSubmitting}>
-                    Enviar
+                    {buttonText}
                 </ButtonForm>
             </form>
         </section>

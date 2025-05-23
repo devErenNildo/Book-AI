@@ -1,0 +1,51 @@
+{
+  "HomePage": {
+    "title": "Ola mundo"
+  },
+  "ContactPage": {
+    "nameLabel": "Nome",
+    "emailLabel": "Email",
+    "subjectLabel": "Assunto",
+    "messageLabel": "Mensagem",
+    "buttonText": "Enviar",
+    "subjectOptions": {
+      "select": "Selecione um assunto",
+      "duvida": "Dúvida",
+      "sugestao": "Sugestão",
+      "outro": "Outro"
+    }
+  },
+  "SobrePage": {
+    "headingText": "Sobre o ",
+    "highlight": "Book-AI",
+    "paragraph": "Uma plataforma elegante e moderna para compartilhar livros em PDF, interagir em tempo real e promover conhecimento colaborativo.",
+    "about1": {
+      "title": "Leitura com interação",
+      "paragraph": "Cada livro conta com um espaço exclusivo para discussões em tempo real, onde você pode comentar e interagir com outros leitores enquanto visualiza o conteúdo.",
+      "list": [
+        "Comentários em tempo real",
+        "Foto e nome de quem comenta",
+        "Atualizações automáticas"
+      ]
+    },
+    "about2": {
+      "title": "Publicação com qualidade",
+      "paragraph": "Publique seus livros em PDF com capa, título, autor, descrição e tags. Cada publicação é exibida com elegância na galeria.",
+      "list": [
+        "Upload de PDF e imagem de capa",
+        "Campos personalizados",
+        "Likes, tags e organização por autor"
+      ]
+    },
+    "tech": {
+      "title": "Tecnologias Utilizadas",
+      "paragraph": "O projeto foi desenvolvido utilizando ferramentas modernas:",
+      "list": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS, Firebase",
+        "Atomic Design"
+      ]
+    }
+  }
+}
